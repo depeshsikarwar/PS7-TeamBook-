@@ -2,7 +2,7 @@
 
 > **Problem Statement (PS) Number:** PS07  
 > **Project Name:** TeamBook  
-> **Live Link:** [https://ps-7-team-book-git-main-depeshs-projects.vercel.app/](https://ps-7-team-book-git-main-depeshs-projects.vercel.app/)
+> **Live Link:** [[https://ps-7-team-book.vercel.app/](https://ps-7-team-book.vercel.app/)]
 
 ---
 
@@ -14,7 +14,7 @@
 
 ## 🌐 Live Demo
 
-- **Deployment URL:** [https://ps-7-team-book-git-main-depeshs-projects.vercel.app/](https://ps-7-team-book-git-main-depeshs-projects.vercel.app/)
+- **Deployment URL:** [[https://ps-7-team-book.vercel.app/](https://ps-7-team-book.vercel.app/)]
 
 ---
 
