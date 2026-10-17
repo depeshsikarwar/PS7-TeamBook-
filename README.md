@@ -61,6 +61,9 @@ Routing is managed client-side using `react-router-dom`:
 - **Data Source:** DummyJSON API
 
 ---
+##Screenshot
+<img width="1465" height="830" alt="Screenshot 2026-10-17 at 10 34 15 PM" src="https://github.com/user-attachments/assets/f4f43e12-cbc9-4123-bfd9-c6f73d8819ba" />
+<img width="1461" height="833" alt="Screenshot 2026-10-17 at 10 34 01 PM" src="https://github.com/user-attachments/assets/e779f92c-c17f-4df2-a2f7-7e4d6964765f" />
 
 ## 📂 Project Structure
 
@@ -82,6 +85,5 @@ Assignment5/
 │   ├── vite.config.js
 │   └── README.md
 └── README.md
-<img width="1465" height="830" alt="Screenshot 2026-10-17 at 10 34 15 PM" src="https://github.com/user-attachments/assets/f4f43e12-cbc9-4123-bfd9-c6f73d8819ba" />
-<img width="1461" height="833" alt="Screenshot 2026-10-17 at 10 34 01 PM" src="https://github.com/user-attachments/assets/e779f92c-c17f-4df2-a2f7-7e4d6964765f" />
+
 
