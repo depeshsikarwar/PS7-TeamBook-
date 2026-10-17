@@ -1,16 +1,131 @@
-# React + Vite
+# TeamBook
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> **Problem Statement (PS) Number:** PS07  
+> **Project Name:** TeamBook  
+> **Live Link:** [https://ps-7-team-book-git-main-depeshs-projects.vercel.app/](https://ps-7-team-book-git-main-depeshs-projects.vercel.app/)
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 📌 Project Overview
 
-## React Compiler
+**TeamBook** is a modern and responsive Employee Directory and Management Web Application. It provides an intuitive interface for browsing staff members, filtering team members across various company departments, viewing comprehensive employee profiles, and tracking employee tasks/todos.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🌐 Live Demo
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Deployment URL:** [https://ps-7-team-book-git-main-depeshs-projects.vercel.app/](https://ps-7-team-book-git-main-depeshs-projects.vercel.app/)
+
+---
+
+## 🔌 APIs Used
+
+The application integrates with the [DummyJSON](https://dummyjson.com) REST API to simulate real-world employee data and task management:
+
+| Endpoint | Method | Description |
+| :--- | :--- | :--- |
+| `https://dummyjson.com/users` | `GET` | Fetches the complete list of users/employees with personal and company details. |
+| `https://dummyjson.com/users/{id}` | `GET` | Fetches specific details for an individual employee by ID. |
+| `https://dummyjson.com/users/{id}/todos` | `GET` | Fetches the list of tasks/todos assigned to a specific employee. |
+
+---
+
+## 🛣️ List of Application Routes
+
+Routing is managed client-side using `react-router-dom`:
+
+| Route Path | Component / View | Description |
+| :--- | :--- | :--- |
+| `/` | `Home View` | Landing page featuring the Employee Portal hero banner and quick navigation button. |
+| `/employee` | `EmployeeList` & `Filters` | Main employee directory displaying employee cards with real-time department filtering. |
+| `/employees/:id` | `EmployeeDetail` | Detailed profile view for a selected employee, including personal details, company role, contact info, and assigned task statuses. |
+
+---
+
+## ✨ Features
+
+- **Department Filtering:** Filter employees by departments (Engineering, Services, Accounting, Legal, Support, Human Resources, Sales, Marketing, or All).
+- **Employee Cards & Profiles:** View avatar, full name, job title, and department at a glance.
+- **Detailed Profile View:** Detailed contact information (Email, Phone, City), company info (Company Name, Department, Job Title), and personal info (Age).
+- **Task Management / Todos:** Real-time fetch and rendering of tasks assigned to each employee with status indicators (Done / Pending).
+- **Clean UI & Responsive Design:** Optimized for mobile, tablet, and desktop viewports.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend Framework:** React 19
+- **Routing:** React Router DOM (v7)
+- **Build Tool:** Vite
+- **Styling:** Vanilla CSS3
+- **Data Source:** DummyJSON API
+
+---
+
+## 📂 Project Structure
+
+```text
+Assignment5/
+├── Frontend/
+│   ├── public/
+│   ├── src/
+│   │   ├── assets/
+│   │   ├── App.css
+│   │   ├── App.jsx             # Main router setup & layout
+│   │   ├── EmployeeDetail.jsx  # Employee profile & task list view
+│   │   ├── employee.jsx        # Employee grid list component
+│   │   ├── filter.jsx          # Department filter dropdown component
+│   │   ├── index.css           # Global stylesheets
+│   │   └── main.jsx            # React root entry point
+│   ├── index.html
+│   ├── package.json
+│   ├── vite.config.js
+│   └── README.md
+└── README.md
+```
+
+---
+
+## 🚀 Getting Started Locally
+
+### Prerequisites
+
+Ensure you have **Node.js** (v18 or higher recommended) and **npm** installed.
+
+### Installation & Run
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/depeshsikarwar/PS7-TeamBook-.git
+   cd PS7-TeamBook-
+   ```
+
+2. **Navigate to the frontend directory:**
+   ```bash
+   cd Frontend
+   ```
+
+3. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+4. **Start the local development server:**
+   ```bash
+   npm run dev
+   ```
+
+5. **Open in browser:**
+   Open [http://localhost:5173](http://localhost:5173) in your browser.
+
+---
+
+## 📦 Build for Production
+
+To create a production-ready build:
+
+```bash
+npm run build
+```
+
+The output will be generated inside the `Frontend/dist` folder.
